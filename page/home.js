@@ -250,60 +250,6 @@ const getHome = (req, res) => {
           font-size: 1.1em;
           opacity: 0.95;
         }
-          .conta{
-          position:relative;
-          width:auto;
-          height:auto;
-          }
-          .button button{
-          position:relative;
-          border:none;
-          width:20vw;
-          height:10vh;
-          background:linear-gradient(to right,green,yellow,blue);
-          font:20px bold;
-          color:cyan;
-          border-radius:20px;
-          cursor:pointer;
-          over-flow:break-words;
-          top:10px;
-          animation: pulse 2s infinite;
-          transition: all 0.3s ease;
-          }
-          .button button:hover{
-          position:relative;
-          transition:all ease 0.3s;
-          color:black;
-          transform:translate(2px) scale(1.05);
-          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-          }
-          .button1{
-          position:absolute;
-          justify-self:right;
-          bottom:10px;
-          }
-          .button1 button{
-           position:relative;
-          border:none;
-          width:20vw;
-          height:10vh;
-          background:linear-gradient(to bottom,skyblue,white,cyan);
-          font:20px bold;
-          color:purple;
-          border-radius:20px;
-          cursor:pointer;
-          over-flow:break-words;
-          animation: pulse 2.5s infinite;
-          transition: all 0.3s ease;
-          }
-          .button1 button:hover{
-          position:relative;
-          color:black;
-          transition:all ease 0.3s;
-          transform:translate(2px) scale(1.05);
-          box-shadow: 0 8px 16px rgba(102, 126, 234, 0.3);
-          }
-
           #submitBtn {
             animation: fadeInDown 1.4s ease-out;
             transition: all 0.3s ease;
@@ -452,32 +398,6 @@ const getHome = (req, res) => {
             animation: slideInDown 0.6s ease-out;
             box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
           }
-
-          .delete-btn {
-            background: linear-gradient(135deg, #ff6b6b, #ff5252);
-            color: white;
-            border: none;
-            padding: 6px 12px;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 0.85em;
-            margin-left: 8px;
-            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-            font-weight: 600;
-            box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
-            animation: slideInRight 0.5s ease-out;
-          }
-
-          .delete-btn:hover {
-            background: linear-gradient(135deg, #ff4444, #ff2222);
-            transform: translateY(-3px) scale(1.08);
-            box-shadow: 0 8px 20px rgba(255, 107, 107, 0.5);
-          }
-
-          .delete-btn:active {
-            transform: translateY(-1px) scale(1.05);
-          }
-
           .search-box {
             display: flex;
             gap: 8px;
@@ -504,13 +424,6 @@ const getHome = (req, res) => {
             border-color: #e94560;
             color: #e0e0e0;
           }
-
-          body.navy-theme .search-box input {
-            background: #051f3a;
-            border-color: #00d4ff;
-            color: #c0d0e0;
-          }
-
           .action-buttons {
             display: flex;
             gap: 8px;
@@ -535,53 +448,12 @@ const getHome = (req, res) => {
             color: white;
             transform: translateY(-2px);
           }
-
-          body.dark-theme .action-btn {
-            background: #16213e;
-            border-color: #e94560;
-            color: #e94560;
-          }
-
-          body.dark-theme .action-btn:hover {
-            background: #e94560;
-            color: white;
-          }
-
-          body.navy-theme .action-btn {
-            background: #051f3a;
-            border-color: #00d4ff;
-            color: #00d4ff;
-          }
-
-          body.navy-theme .action-btn:hover {
-            background: #00d4ff;
-            color: #001a4d;
-          }
-
-          .record-count {
-            font-size: 0.9em;
-            font-weight: 600;
-            margin-bottom: 12px;
-            padding: 8px;
-            border-radius: 4px;
-            background: #f0f2ff;
-          }
-
-          body.dark-theme .record-count {
-            background: #16213e;
-            color: #e0e0e0;
-          }
-
-          body.navy-theme .record-count {
-            background: #051f3a;
-            color: #00d4ff;
-          }
             .footer{
             position:relative;
             width:100vw;
             height:auto;
             justify-self:center;
-            top:20px;
+            top:25px;
             background-color:#000;
             color:white;
             }
@@ -589,6 +461,8 @@ const getHome = (req, res) => {
             position:relative;
             width:20vw;
             height:auto;
+            justify-self:left;
+            margin-left:10px;
             background-color:transparent;
             text-align:center;
             }
@@ -609,6 +483,71 @@ const getHome = (req, res) => {
             transform:translate(2px);
             color:purple;
             cursor:pointer;
+            }
+            .special{
+            position:absolute;
+            width:20vw;
+            height:auto;
+            background-color:transparent;
+            cursor:pointer;
+            justify-self:center;
+            text-align:center;
+            overflow:break-words;
+            flex-wrap:wrap;
+            bottom:45px;
+            }
+            .links{
+            display:grid;
+            flex-wrap:wrap;
+            gap:5px;
+            }
+            .links a{
+            position:relative;
+            cursor:pointer;
+            color:purple;
+            text-decoration:none;
+            font:20px bold;
+            }
+            .links a:hover{
+            position:relative;
+            color:wheat;
+            transition:all ease 0.3s;
+            transform:translate(2px);
+            }
+            .para{
+            position:relative;
+            top:40px;
+            }
+            .medi{
+            position:absolute;
+            width:20vw;
+            height:auto;
+            background-color:transparent;
+            cursor:pointer;
+            justify-self:right;
+            text-align:center;
+            overflow:break-words;
+            flex-wrap:wrap;
+            bottom:150px;
+            }
+            .social-links{
+            display:grid;
+            flex-wrap:wrap;
+            gap:5px;
+            }
+            .social-links a{
+            position:relative;
+            cursor-pointer;
+            text-decoration:none;
+            text-transform:capitalize;
+            color:wheat;
+            }
+            .social-links a:hover{
+            position:relative;
+            color:white;
+            transform:translate(2px);
+            cursor:pointer;
+            transition:all ease 0.3s;
             }
       </style>
     </head>
@@ -647,13 +586,31 @@ const getHome = (req, res) => {
         <a href="/product">product</a>
         <a href="/service">service</a>
        <a href="/blog">blog</a>
+       <a href="/header">lesson</a>
         <a href="/register">register</a>
          <a href="/login">login</a>
         <a href="/join">join</a>
         <a href="/search">search</a>
         </div>
         </div>
-        <div
+        <div class="medi">
+       <h3>social-media links &hookleftarrow;</h3>
+        <div class="social-links">
+        <a href="https://www.youtube.com/@evaristebapfekurera5995">you tube</a>
+        <a href="https://www.facebook.com/evariste.arrogent.ever">facebook</a>
+        <a href="https://www.linkedin.com/in/evariste-bapfekurera-a3700b2b0/">linkedin</a>
+        <a href="https://x.com/EBapfekure3">twitter</a>
+        <a href="https://www.instagram.com/evari_ste2025/?hl=en">intagram</a>
+      </div>
+        </div>
+        <div class="special">
+        <h3>contact-links</h3>
+        <div class="links">
+Email: <a href="mailto:bapfekureraevariste@gmail.com">Email Us</a>
+Phone: <a href="tel:+250785786547">Call Us</a>
+location: <a href="/contact">full our info</a
+        </div>
+        </div>
         <div class="para">
         <p>copy right by Evariste2026</p>
         </div>
