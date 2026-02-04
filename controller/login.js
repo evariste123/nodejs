@@ -82,7 +82,7 @@ const getLogin = (req, res) => {
        position:relative;
        width:35vw;
        height:8vh;
-       top:30px;
+       top:50px;
        }
        .log input::placeholder{
        position:relative;
@@ -106,10 +106,10 @@ const getLogin = (req, res) => {
        border:none;
        background-color:cyan;
        font:20px medium;
-       top:30px;
+       top:60px;
        cursor:pointer;
        border-radius:10px;
-       over-flow:break-word;
+       overflow-wrap:break-word;
        }
        .log button:hover{
        position:relative;
@@ -139,8 +139,6 @@ const getLogin = (req, res) => {
         <div class="login" id="login">
         <h3>join us here! your data will be safe with us!</h3>
         <div class="log">
-        <input type="text" id="fname" placeholder="enter your full name" required>
-        <br><br>
         <input type="text" id="email" placeholder="enter your email" required>
         <br><br>
         <input type="password" id="password" placeholder="enter your password" required>

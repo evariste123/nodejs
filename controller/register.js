@@ -143,6 +143,12 @@ const getRegister = (req, res) => {
        border-radius:10px;
        cursor:pointer;
        }
+       .regi button:hover{
+       position:relative;
+       transition:all ease 0.3s;
+       background-color:olive;
+       cursor:pointer;
+       }
             </style>
       </head>
       <body>
