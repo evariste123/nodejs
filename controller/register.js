@@ -40,7 +40,7 @@ const getRegister = (req, res) => {
        overflow:break-words;
        font:20px bold;
        text-decoration:none;
-       color:darkorange;
+       color:white;
        bottom:20px;
        flex-wrap:wrap;
        }
